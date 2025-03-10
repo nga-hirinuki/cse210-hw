@@ -29,7 +29,7 @@ class Program
             }
             else
             {
-            letter = "E";
+            letter = "F";
             }
         
         float divide = grade/10f;
@@ -53,10 +53,15 @@ class Program
         {
             sign = " ";
         }
+
+         if (grade <= 60)
+        {
+            sign = " ";
+        }
     
 
 
-        Console.Write($"{letter}{sign}   {deci:F0} ");
+        Console.Write($"{letter}{sign} ");
         
         if (grade > 70)
         {
