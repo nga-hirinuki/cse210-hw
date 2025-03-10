@@ -49,6 +49,13 @@ class Program
             sign = " ";
             }
 
+        if (grade >= 97)
+        {
+            sign = " ";
+        }
+    
+
+
         Console.Write($"{letter}{sign}   {deci:F0} ");
         
         if (grade > 70)
