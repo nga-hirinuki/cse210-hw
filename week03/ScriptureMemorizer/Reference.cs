@@ -23,7 +23,7 @@ public class Reference
         _endVerse = endVerse;
     }
 
-    public string DisplayText()
+    public string GetDisplayText()
     {
         if (_verse == _endVerse) // Now this always works correctly
             return $"{_book} {_chapter}:{_verse}";
