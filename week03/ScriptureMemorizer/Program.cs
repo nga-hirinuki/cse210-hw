@@ -11,6 +11,7 @@ class Program
         Console.WriteLine(scripture.GetDisplayText()); // Start with no words hidden
 
         while (!scripture.IsCompletelyHidden()) // loops until all words are hidden
+        
         {
             Console.WriteLine("\nPress Enter to hide 3 more words...");
             Console.ReadLine(); // Wait for user to press Enter

@@ -5,23 +5,31 @@ class Program
 {
     static void Main(string[] args)
     {
-        Journal myJournal = new Journal();  // Create Journal instance
-        PromptGenerator promptGenerator = new PromptGenerator();// Create prompt instance
+        // Create an instances for Journal and PromptGenenrator
+        Journal myJournal = new Journal();  
+        PromptGenerator promptGenerator = new PromptGenerator();
                  
         Console.WriteLine("Welcome to the Journal Program! ");
-    
-        int choice = 0; // for the while loop
 
-        do // this loop if 5 is not pressed
+        // Declare variable for loop
+        int choice = 0; 
+
+        // do loop to run choices 
+        do 
         {
+            // Ask user to choice 
             Console.WriteLine("Please select one of the following choices: ");
             Console.WriteLine("1. Write\n2. Display\n3. Load\n4. Save\n5. Quit  ");
-            Console.Write("What would you like to do?: "); // body: guess number
+            Console.Write("What would you like to do?: "); 
+            
+            // store answer and convert to int
             string number = Console.ReadLine();
             choice = int.Parse(number);
 
-            if (choice == 1) // body: Write a post
+            // Conditional statement 
+            if (choice == 1) 
             {
+                // Call method to write to journal
                 Console.Write("Enter the date (e.g., day/date/month/year): ");
                 string date = Console.ReadLine();
 

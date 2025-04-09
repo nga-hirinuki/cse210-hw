@@ -9,7 +9,7 @@ public class Journal
     public List<Entry> _entries = new List<Entry>();
 
 
-    public void AddEntry(Entry newEntry)
+    public void AddEntry(Entry newEntry)// method to add entries to the list
     {
         _entries.Add(newEntry);
     }
@@ -17,7 +17,7 @@ public class Journal
 
     public void DisplayAll()
     {
-        foreach (var entry in _entries)
+        foreach (var entry in _entries) //go through entries in list and display all 
         {
             entry.Display();  // Using Entry's Display() method for formatting
             Console.WriteLine();  // Add spacing for clarity
